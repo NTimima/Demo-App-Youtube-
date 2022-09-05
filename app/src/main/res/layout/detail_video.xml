@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/main_video"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ava_image"
+        android:src="@drawable/frank"
+        android:layout_marginTop="10dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ava_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_video"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/face"
+        android:layout_marginStart="14dp"/>
+
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ava_image"
+        app:layout_constraintTop_toBottomOf="@id/main_video"
+        android:text="Frank Sinatra - FLy me to the Moon"
+        android:layout_marginTop="17dp"
+        android:maxLines="@integer/material_motion_duration_medium_2"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginStart="12dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif-medium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_video"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/more"/>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ava_image"
+        app:layout_constraintTop_toBottomOf="@+id/more"
+        android:text="Rayloweswings"
+        android:textSize="17sp"
+        android:drawableEnd="@drawable/dot"
+        android:drawablePadding="10dp"
+        android:layout_marginStart="12dp"
+        android:fontFamily="sans-serif-medium"/>
+    <TextView
+        android:id="@+id/viewers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/author"
+        app:layout_constraintTop_toBottomOf="@id/more"
+        android:text="50M views"
+        android:textSize="17sp"
+        android:drawableEnd="@drawable/dot"
+        android:drawablePadding="5dp"
+        android:fontFamily="sans-serif-medium"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/viewers"
+        app:layout_constraintTop_toBottomOf="@id/more"
+        android:text="5 years ago"
+        android:textSize="17sp"
+        android:drawablePadding="5dp"
+        android:fontFamily="sans-serif-medium"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

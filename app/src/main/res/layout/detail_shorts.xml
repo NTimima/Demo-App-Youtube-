@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="230dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="15dp">
+
+        <ImageView
+            android:id="@+id/image_shorts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/frank"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more1"
+            app:layout_constraintTop_toTopOf="@id/image_shorts"
+            app:layout_constraintEnd_toEndOf="@id/image_shorts"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/name_shorts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="8dp"
+            android:text="Frank Senatra - Fly me to the moon"
+            android:textColor="@color/white1"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_shorts"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="8dp"
+            android:text="316K views"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="17dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
